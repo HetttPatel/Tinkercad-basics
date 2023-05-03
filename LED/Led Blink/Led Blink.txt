@@ -1,8 +1,8 @@
-// Component list
+/* Component list
 1 Arduino Uno R3
 1 LED
 1 220 ohm Resistor
-//  
+*/  
 
 // Pin 13 has an LED connected on most Arduino boards.
 // give it a name:
