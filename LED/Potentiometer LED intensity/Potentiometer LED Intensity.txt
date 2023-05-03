@@ -1,9 +1,9 @@
-// Component 
+/* Component 
 1 Arduino Uno R3
-1 250 Kohm Potentiometer
+1 250K ohm Potentiometer
 1 LED
-1 1 kohm Resistor
-//
+1 1k ohm Resistor
+*/
 
 int ledPin = 10;
 int potentiometerPin = A0;
