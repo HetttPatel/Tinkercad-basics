@@ -1,0 +1,52 @@
+/* Component
+1 Arduino Uno R3
+1 PIR sensor
+1 Piezo
+1 250 k ohm Potentiometer
+1 LED
+1 LCD 16x2
+1 K ohm Resistor
+*/
+
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd(13,12,6,5,3,2);
+int led=7;
+int PIR=4;
+int buzzer=8;
+int PIRstatus;
+
+void setup()
+{
+  lcd.begin(16,2);
+  pinMode(led, OUTPUT);
+  pinMode(buzzer, OUTPUT);
+  pinMode(PIR, INPUT);
+  lcd.clear();
+}
+
+void loop()
+{
+  PIRstatus=digitalRead(PIR);
+  if(PIRstatus==HIGH)
+  {
+    lcd.clear();
+    digitalWrite(led,HIGH);
+    digitalWrite(buzzer,HIGH);
+    tone(buzzer, 300, 2000);
+    lcd.setCursor(4,0);
+    lcd.print("ALERT!!!");
+    delay(2000);
+    lcd.clear();
+  }
+  
+  else
+  {
+    lcd.setCursor(6, 0);
+    lcd.print("SAFE");
+    digitalWrite(led, LOW);
+    digitalWrite(buzzer, LOW);
+  }
+  
+  delay(1000);
+}

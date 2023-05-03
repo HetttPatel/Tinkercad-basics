@@ -1,0 +1,46 @@
+// Component
+1 Arduino Uno
+1 RED LED
+1 YELLOW LED
+1 GREEN LED
+1 Pushbutton
+1 10 kohm Resistor
+3 220 ohm Resistor
+//
+
+
+int switchState = 0;
+void setup()
+{
+  pinMode(9, INPUT);
+  pinMode(2, OUTPUT);
+  pinMode(3, OUTPUT);
+  pinMode(4, OUTPUT);
+}
+
+
+void loop()
+{
+  switchState = digitalRead(9);
+  digitalWrite(2, HIGH);
+  if (switchState == LOW){
+    digitalWrite(2, HIGH);
+    digitalWrite(3, LOW);
+    digitalWrite(4, LOW);
+  }
+  else{
+    delay(1000);
+    digitalWrite(2, LOW);
+    digitalWrite(3, HIGH);
+    delay(3000);
+    digitalWrite(3, LOW);
+    digitalWrite(4, HIGH);
+    delay(7000);
+    digitalWrite(4, LOW);
+    digitalWrite(3, LOW);
+    digitalWrite(2, HIGH);
+    delay(500);
+  }
+  
+  
+}

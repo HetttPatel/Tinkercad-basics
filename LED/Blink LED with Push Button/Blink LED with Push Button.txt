@@ -1,0 +1,24 @@
+// Component
+1 Arduino Uno R3
+1 LED
+2 1 k ohm Resistor
+1 Pushbutton
+//
+
+// C++ code
+//
+void setup()
+{
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+}
+
+void loop()
+{
+  if (digitalRead(7)==HIGH){
+    digitalWrite(8, HIGH);
+  }
+  else{
+    digitalWrite(8, LOW);
+  }
+}

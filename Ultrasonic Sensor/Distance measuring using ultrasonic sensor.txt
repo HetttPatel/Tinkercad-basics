@@ -1,0 +1,39 @@
+/*Component
+1 Arduino Uno R3
+1 LCD 16x2
+1 1k ohm Potentiometer
+1 Ultrasonic Distance Sensor
+*/
+#include <LiquidCrystal.h> 
+LiquidCrystal lcd(12,10,9,8,7,6);
+int trigerpin=5;
+float echo=4 ;
+float speedOfSound=346; //meter per sec
+float pingtime;
+float dist;
+
+  
+void setup()
+{ Serial.begin(9600);
+  lcd.begin(16,2);
+  lcd.setCursor(0,0);
+  lcd.print("DISTANCE=");
+  pinMode(trigerpin,OUTPUT);
+  pinMode(echo,INPUT);
+}
+
+void loop()
+{ 
+  digitalWrite(trigerpin,LOW);
+  delayMicroseconds(2000);
+  digitalWrite(trigerpin,HIGH);
+  delayMicroseconds(15);
+  digitalWrite(trigerpin,LOW);
+  delayMicroseconds(10);
+  pingtime=pulseIn(echo,HIGH);
+  dist=pingtime*speedOfSound/20000;
+  Serial.println(dist);
+  lcd.setCursor(10,0);
+  lcd.print(dist);
+  delay(1000);
+}

@@ -1,0 +1,32 @@
+/* Component
+1 Arduino Uno R#
+1 Positional Micro Servo
+*/
+#include<Servo.h>
+ //Servo is the package we are using as motor with Arduino 
+int pos = 0;
+Servo pin_4; //Servo is the object/handle we've created
+//the signal pin is named as pin_4
+
+void setup()
+{
+  pin_4.attach(9);//attaches signal pin to arduino
+}
+
+void loop()
+{
+  for (pos =0  ; pos <= 180 ; pos +=1 )
+{ //limit is 180 deg
+    //move the shaft from 0 to 180 and again 0 deg 
+     //i.e it will be 0 then 180 then 0 the pos of shaft 
+//write holds the value of position of shaft 
+     pin_4.write(pos);/*pos+=1 is pos is  inc 1 by 1*/
+     delay (10) ;  
+    //wait for shaft to rotate for every pos
+  }
+  for (pos = 180; pos >= 0; pos -= 1 ){
+    //when the value exceeds 180
+     pin_4.write(pos) ;
+    //thevalue gets decremented by 1 till it becomes 0
+    delay (10) ;}
+}

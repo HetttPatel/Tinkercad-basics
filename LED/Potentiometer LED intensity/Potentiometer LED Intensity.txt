@@ -1,0 +1,19 @@
+// Component 
+1 Arduino Uno R3
+1 250 Kohm Potentiometer
+1 LED
+1 1 kohm Resistor
+//
+
+int ledPin = 10;
+int potentiometerPin = A0;
+
+void setup() {
+  pinMode(ledPin, OUTPUT);                  
+  pinMode(potentiometerPin, INPUT);
+}
+
+void loop() {
+  int potValue = analogRead(potentiometerPin)/4 ; 
+  analogWrite(ledPin, potValue);
+}
