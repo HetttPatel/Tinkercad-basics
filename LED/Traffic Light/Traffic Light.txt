@@ -1,12 +1,12 @@
-// Component
+/* Component list
 1 Arduino Uno
 1 RED LED
 1 YELLOW LED
 1 GREEN LED
 1 Pushbutton
-1 10 kohm Resistor
+1 10k ohm Resistor
 3 220 ohm Resistor
-//
+*/
 
 
 int switchState = 0;
