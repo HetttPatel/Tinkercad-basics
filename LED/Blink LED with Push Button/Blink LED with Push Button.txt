@@ -1,9 +1,9 @@
-// Component
+/* Component
 1 Arduino Uno R3
 1 LED
 2 1 k ohm Resistor
 1 Pushbutton
-//
+*/
 
 // C++ code
 //
