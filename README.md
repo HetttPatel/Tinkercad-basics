@@ -130,7 +130,7 @@ A servo motor is a type of motor that is commonly used in robotics and automatio
 An LCD 16x2 display is a type of alphanumeric display that consists of 16 columns and 2 rows of characters. It is commonly used in electronic devices such as calculators, clocks, and industrial control panels to display information such as time, temperature, and status messages. The display is driven by a microcontroller or a dedicated driver IC and can be easily interfaced with popular development boards such as Arduino and Raspberry Pi.
 
 
-
+<!--- 
 
 # Basic Circuit construction and programs 
 
