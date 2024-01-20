@@ -8,11 +8,19 @@
 
 Tinkercad can be used in IoT to design and prototype a wide range of connected devices and sensors. It provides a simple drag-and-drop interface, built-in tools and features, and simulation tools to test the device's functionality before building a physical prototype. Tinkercad could be used to design a custom enclosure for a Raspberry Pi or other microcontroller board, allowing makers and hobbyists to create customized IoT devices for their projects. It is a powerful and accessible platform for designing and prototyping IoT devices and other 3D models.
 
+✪ Tinkercad : https://www.tinkercad.com/
+
+✪ Arduino IDE : https://www.arduino.cc/en/software
+
 ## ✪ Discription of Components :
 
 ### Arduino Uno :  
 
 ![arduino](https://user-images.githubusercontent.com/96485370/236083852-df4a2ec4-0365-4751-86a2-b6d884ab65b0.png)
+
+### Aduiuno Documentation
+
+[Arduino - Quick Guide.pdf](https://github.com/harsh9104/IOT-basics-workshop/files/11302771/Arduino.-.Quick.Guide.pdf)
 
 
 Arduino is an open-source electronics platform designed to simplify the process of creating interactive projects. It consists of a programmable microcontroller board, a development environment for writing and uploading code, and a community of users who share their ideas and projects. With Arduino, you can create a wide range of electronic devices, from simple robots and LED displays to complex home automation systems and interactive installations. It is widely used by hobbyists, students, and professionals in various fields, such as engineering, art, and design. The platform is known for its ease of use, flexibility, and affordability, making it accessible to anyone with a desire to learn and create.
