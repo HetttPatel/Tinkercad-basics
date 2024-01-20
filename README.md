@@ -40,6 +40,17 @@ A breadboard is a plastic board with a grid of small holes that allows electroni
 
 A resistor is an electronic component that resists the flow of electrical current in a circuit. It is designed to limit the amount of current that passes through a circuit by providing a specific amount of resistance. Resistors are commonly used in electronic circuits to control the voltage levels, current flow, and power dissipation, and are available in a wide range of values, sizes, and power ratings.
 
+### Jumper Wires : 
+
+
+
+![jumper wires](https://user-images.githubusercontent.com/96485370/233783761-f76cac68-8372-4fbe-82cc-64828c6d7d9d.jpg)
+
+Jumper wires are insulated wires used to create temporary electrical connections between components on a breadboard or other electronic circuit. They are often made of stranded copper wire with a plastic insulation coating and come in a variety of colors and lengths. Jumper wires are useful for prototyping and testing circuits as they allow for quick and easy connections and modifications without the need for soldering. 
+
+As in the img it shows 1st one is female to male 2nd is female to female and last is male to male
+
+
 
 ### PIR : 
 
@@ -73,6 +84,14 @@ LED (Light Emitting Diode) sensors are electronic devices that emit light when a
 ![HC-SR04](https://user-images.githubusercontent.com/96485370/233784286-6a0116a1-b474-475f-8677-9b8d2967c23a.png)
 
 The HC-SR04 is an ultrasonic sensor that uses sound waves to measure distance. It is commonly used in robotics, automation, and security systems to detect the presence of objects and obstacles in its path. The sensor emits high frequency sound waves and measures the time it takes for the sound to bounce back, allowing it to calculate the distance to the object with high accuracy.
+
+
+### DHT11 Temperature and Humidity Sensor Module : 
+
+
+![dht11](https://user-images.githubusercontent.com/96485370/233784465-d35ffad5-d6e0-40c5-885b-8a75fe581a5d.jpg)
+
+The DHT11 is a temperature and humidity sensor module that uses a thermistor and a capacitive humidity sensor to measure the ambient temperature and humidity. It is commonly used in environmental monitoring applications, such as weather stations, HVAC systems, and indoor air quality monitors. The sensor provides a digital output that can be easily read by microcontrollers, making it a popular choice for DIY projects and automation systems.
 
 
 ### Potentiometer :
@@ -111,7 +130,7 @@ A servo motor is a type of motor that is commonly used in robotics and automatio
 An LCD 16x2 display is a type of alphanumeric display that consists of 16 columns and 2 rows of characters. It is commonly used in electronic devices such as calculators, clocks, and industrial control panels to display information such as time, temperature, and status messages. The display is driven by a microcontroller or a dedicated driver IC and can be easily interfaced with popular development boards such as Arduino and Raspberry Pi.
 
 
-<!--
+
 
 # Basic Circuit construction and programs 
 
